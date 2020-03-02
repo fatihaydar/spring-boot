@@ -253,7 +253,7 @@ public class StartApplication implements CommandLineRunner {
 
         List<Book> books = new ArrayList();
         for (int count = 0; count < size; count++) {
-            if (count == 500) {
+            if (count == 5000) {
                 // create a invalid data for id 500, test rollback
                 // name allow 255, this book has length of 300
                 books.add(new Book(NameGenerator.randomName(300), new BigDecimal(1.99)));
